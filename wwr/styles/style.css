@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Inconsolata:wght@200..900&family=Rock+Salt&family=RocknRoll+One&family=Rubik+Moonrocks&display=swap");
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -6,9 +8,14 @@
 /* Colors */
 
 body {
+  font-family: Barlow, Helvetica, sans-serif;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
   background-color: #aba9c3b3;
 }
 header {
+  font-family: "Rock Salt", "RocknRoll One";
   background-color: #d8c99b;
 }
 nav a:hover {
@@ -26,9 +33,14 @@ nav a:hover {
   background-color: #d8c99b;
 }
 .msg {
+  padding: 35px;
+  line-height: 1.5em;
   background-color: #5b616a;
 }
 footer {
+  padding: 25px 50px;
+  margin-top: 200px;
+  color: black;
   background-color: #5b616a;
 }
 footer p {
@@ -37,9 +49,21 @@ footer p {
 footer p a:hover {
   text-decoration: underline;
 }
+footer a {
+  color: #d8c99b;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #d8c99b;
+}
+footer .social img {
+  padding-top: 15px;
+}
 
 nav a {
+  font-family: Barlow, Helvetica, sans-serif;
   text-align: center;
+  padding: 35px;
   color: #275dad;
   text-decoration: none;
 }
@@ -47,35 +71,38 @@ nav a:hover {
   color: whitesmoke;
 }
 .home-title {
+  margin-top: 10px;
+  font-family: "Rock Salt", "RocknRoll One";
+  font-size: 2em;
   color: #d8c99b;
+}
+h2 {
+  margin: 0;
 }
 h4 {
   color: #275dad;
 }
 .book,
 .join {
+  margin-top: 50px;
+  border-radius: 5px;
+  font-size: 18px;
   color: #aba9c3;
   text-decoration: none;
 }
 .book:hover,
 .join:hover {
+  padding: 15px 30px;
   color: #275dad;
 }
 .msg h2 {
+  font-family: "Rock Salt", "RocknRoll One";
   color: #d8c99b;
 }
 .msg p {
+  padding-bottom: 15px;
+  font-size: 0.8em;
   color: #275dad;
-}
-footer {
-  color: black;
-}
-footer a {
-  color: #275dad;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #d8c99b;
 }
 
 /* Alignments */
@@ -90,6 +117,9 @@ footer a:hover {
 main {
   text-align: center;
 }
+main section img {
+  box-sizing: border-box;
+}
 section {
   text-align: center;
 }
@@ -103,7 +133,19 @@ section {
 .logo,
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 #hero-img {
   width: 100%;
+}
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+.card-img {
+  border: 10px solid #d8c99b;
+}
+#logo_link {
+  padding-top: 5px;
 }
