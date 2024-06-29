@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Inconsolata:wght@200..900&family=Rock+Salt&family=RocknRoll+One&family=Rubik+Moonrocks&display=swap");
 
+/**** Home ****/
+
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -107,12 +109,13 @@ h4 {
 }
 .msg h2 {
   font-family: "Rock Salt", "RocknRoll One";
-  color: #d8c99b;
+  color: white;
 }
 .msg p {
   padding-bottom: 15px;
   font-size: 0.8em;
-  color: #275dad;
+  color: #d8c99b;
+  /* color: #275dad; */
 }
 
 /* Alignments */
@@ -142,7 +145,7 @@ h4 {
 .button-box {
   text-align: center;
 }
-main {
+.home-grid {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -194,7 +197,6 @@ section {
   transform: scale(1.1);
 }
 .mountains {
-  width: 100%;
   grid-column: 2/7;
   grid-row: 5/8;
   box-shadow: 5px 5px 10px #5b616a;
@@ -204,6 +206,59 @@ section {
 
   justify-self: center;
   align-self: center;
+}
+
+/**** Blog ****/
+
+#blog-top {
+  text-align: center;
+}
+#blog-title {
+  /* text-align: center; */
+  justify-self: center;
+  align-self: center;
+}
+#blog-description {
+  font-family: Barlow, Helvetica, sans-serif;
+  /* doesn't work? */
+}
+#blog-title p {
+}
+.blog-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+}
+.post-title {
+  font-family: "Rock Salt", "RocknRoll One";
+  color: #275dad;
+  /* text-align: center; */
+}
+.post-entry {
+  padding-bottom: 15px;
+  font-size: 1em;
+  color: black;
+}
+#background {
+  height: 725px;
+  background-color: #d8c99b;
+  grid-column: 1/11;
+  grid-row: 4/9;
+}
+/* .msg { */
+.post {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  text-align: justify;
+
+  padding: 35px;
+  line-height: 1.5em;
+  /* background-color: #5b616a; */
+  /* grid-column: 6/10;
+  grid-row: 6/7; */
+  box-shadow: 5px 5px 10px #5b616a;
 }
 
 /* Media Query -- Do not add any CSS below! */
@@ -257,4 +312,4 @@ section {
   }
 }
 
-/* Media Query -- Do not add any CSS below! */
+/* ^^^ Media Query -- Do not add any CSS below! */
