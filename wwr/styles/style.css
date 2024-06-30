@@ -235,30 +235,33 @@ section {
   color: #275dad;
   /* text-align: center; */
 }
-.post-entry {
-  padding-bottom: 15px;
-  font-size: 1em;
-  color: black;
-}
-#background {
+/* #background {
   height: 725px;
   background-color: #d8c99b;
   grid-column: 1/11;
   grid-row: 4/9;
-}
-/* .msg { */
+} */
 .post {
   width: 80%;
   display: block;
   margin: 0 auto;
   text-align: justify;
+  /* content: normal; */
+  font-size: 1em;
 
-  padding: 35px;
+  padding: 45px;
   line-height: 1.5em;
-  /* background-color: #5b616a; */
+  background-color: #d8c99b;
   /* grid-column: 6/10;
   grid-row: 6/7; */
   box-shadow: 5px 5px 10px #5b616a;
+}
+.post-with-img {
+  /* padding-bottom: 15px;
+  font-size: 1em; */
+}
+.post img {
+  float: inline-end;
 }
 
 /* Media Query -- Do not add any CSS below! */
