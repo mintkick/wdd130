@@ -230,7 +230,8 @@ section {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
 }
-.post-title {
+.post h3 {
+  /* .post-title { */
   font-family: "Rock Salt", "RocknRoll One";
   color: #275dad;
   /* text-align: center; */
