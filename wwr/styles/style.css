@@ -159,10 +159,18 @@ section {
 
 /* Widths */
 
+.logo-container,
+.icon {
+  /* because of the padding, this needs to be its own thing so that the border-radius can make a complete circle */
+  padding-top: 10px;
+}
+.logo {
+  border-radius: 100%;
+}
+.logo-container,
 .logo,
 .icon {
   width: 80px;
-  padding-top: 10px;
 }
 #hero-img {
   width: 100%;
@@ -212,24 +220,29 @@ section {
 
 #blog-top {
   text-align: center;
+  width: 40%;
+  margin: 30px auto;
+  padding: 45px;
+  line-height: 1.5em;
+  box-shadow: 10px 10px 10px #4b515a;
+  background-color: #5b616a;
+  font-family: "Rock Salt";
+  color: #d8c99b;
 }
-#blog-title {
-  /* text-align: center; */
+/* #blog-title {
+  text-align: center;
   justify-self: center;
   align-self: center;
-}
+} */
 #blog-description {
   font-family: Barlow, Helvetica, sans-serif;
-  /* doesn't work? */
 }
-#blog-title p {
-}
-.blog-grid {
+/* #blog-grid {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: 1fr;
-}
+} */
 .post h3 {
   /* .post-title { */
   font-family: "Rock Salt", "RocknRoll One";
@@ -244,7 +257,7 @@ section {
 } */
 .post {
   width: 80%;
-  display: block;
+  /* display: block; */
   margin: 0 auto;
   text-align: justify;
   /* content: normal; */
@@ -264,12 +277,12 @@ section {
   /* padding-left: -100px; */
   margin: 16px;
   margin-left: 32px;
-  /* margin-right: -100px; */
-  box-shadow: 1px 2px 5px #5b616a;
+  /* margin-right: -100px; */ /* to make it stick off the edge of the post */
+  box-shadow: 1px 2px 5px #88793b;
 }
 
-/* I may want to add tape and pin icons/images to these posts,
-but for now, this will do nicely. */
+/* I may want to add tape and pin icons/images to these
+post boxes, but for now, this will do nicely. */
 
 /* Media Query -- Do not add any CSS below! */
 
