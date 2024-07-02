@@ -257,13 +257,19 @@ section {
   grid-row: 6/7; */
   box-shadow: 5px 5px 10px #5b616a;
 }
-.post-with-img {
-  /* padding-bottom: 15px;
-  font-size: 1em; */
-}
 .post img {
+  /* max-height: 75%; */
+  /* height: 150px; */ /* width: auto; */
   float: inline-end;
+  /* padding-left: -100px; */
+  margin: 16px;
+  margin-left: 32px;
+  /* margin-right: -100px; */
+  box-shadow: 1px 2px 5px #5b616a;
 }
+
+/* I may want to add tape and pin icons/images to these posts,
+but for now, this will do nicely. */
 
 /* Media Query -- Do not add any CSS below! */
 
@@ -316,4 +322,4 @@ section {
   }
 }
 
-/* ^^^ Media Query -- Do not add any CSS below! */
+/* ^^^ Media Query -- Do not add any CSS here or below! */
