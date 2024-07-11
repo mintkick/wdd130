@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Lost Rafting | Contact Form</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <a href="index.html" id="logo_link">
+          <div class="logo-container">
+            <img class="logo" src="images/logo.jpeg" alt="company logo" />
+          </div>
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="site-plan-rafting.html">Site Plan</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+      </header>
+      <main class="">
+        <form action="/my-handling-form-page" method="post">
+          <!-- action and method are the what/where and how -->
+          <ul>
+            <li>
+              <!-- <li> is used to conveniently structure our code and make styling easier -->
+              <label for="name">Name:</label>
+              <input type="text" name="user_name" id="name" />
+              <!-- Note the use of the for attribute on all <label> elements, which takes as its value the id of the form control with which it is associated — this is how you associate a form control with its label. -->
+            </li>
+            <li>
+              <label for="mail">Email:</label>
+              <input type="email" name="user_email" id="mail" />
+            </li>
+            <li>
+              <label for="msg">Message:</label>
+              <textarea name="user_message" id="msg"></textarea>
+            </li>
+            <li class="button">
+              <button type="submit">Send your message</button>
+            </li>
+          </ul>
+        </form>
+      </main>
+      <footer>
+        <p>Dry Oar &copy; 2024 - Adam Whittaker</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+          <a href="#" target="_blank">
+            <!-- left blank intentionally bc I don't want to open Facebook on my device ever -->
+            <img src="images/facebook.png" alt="fb icon" />
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon" />
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
