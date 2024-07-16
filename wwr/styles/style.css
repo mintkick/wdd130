@@ -287,6 +287,13 @@ post boxes, but for now, this will do nicely. */
 
 /* Contact Us */
 
+.contact-us-description {
+  margin-left: 10em;
+  margin-right: 10em;
+  text-align: justify;
+  font-size: smaller;
+}
+
 body {
   /* Center the form on the page */
   text-align: center;
