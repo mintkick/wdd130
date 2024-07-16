@@ -6,9 +6,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: palegreen;
+  --primary-color: palegreen; /* #3dcc8f; */
   /* #396e94; */
   --secondary-color: mediumseagreen;
+  /* #3dcc8f; */
   /* #e7c24f; */
   --accent1-color: black; /* check out the mediums, pales, aquamarines, sea, and spring greens*/
   --accent2-color: blanchedalmond;
@@ -53,6 +54,8 @@ body {
 img {
   display: block;
   margin: 0 auto;
+
+  width: 15em;
 }
 h1,
 h2,
