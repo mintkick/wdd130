@@ -330,37 +330,6 @@ footer a:hover {
   text-align: center;
 }
 
-.post h3 {
-  font-family: "Rock Salt", "RocknRoll One";
-  color: #275dad;
-  /* text-align: center; */
-}
-.post {
-  width: 80%;
-  /* display: block; */
-  margin: 0 auto;
-  text-align: justify;
-  /* content: normal; */
-  font-size: 1em;
-
-  padding: 45px;
-  line-height: 1.5em;
-  background-color: #d8c99b;
-  /* grid-column: 6/10;
-  grid-row: 6/7; */
-  box-shadow: 5px 5px 10px #5b616a;
-}
-.post img {
-  /* max-height: 75%; */
-  /* height: 150px; */ /* width: auto; */
-  float: inline-end;
-  /* padding-left: -100px; */
-  margin: 16px;
-  margin-left: 32px;
-  /* margin-right: -100px; */ /* to make it stick off the edge of the post */
-  box-shadow: 1px 2px 5px #88793b;
-}
-
 /* Media Query -- Do not add any CSS below! */
 
 /* @media screen and (max-width: 900px) {
