@@ -69,8 +69,6 @@ Fonts are separated by a | */
   color: #fffc;
 } */
 
-/* Widths */
-
 /* Mine */
 
 .logo,
@@ -114,6 +112,8 @@ header {
   display: grid;
   grid-template-columns: auto auto;
   /* grid-template-columns: auto 150px auto; */
+
+  overflow: hidden;
 }
 nav {
   display: flex;
@@ -136,6 +136,18 @@ nav a:hover {
   background-color: black;
   text-shadow: 0 0 7px var(--primary-color);
 }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position (0) */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0)) */
+/* .sticky,
+#content {
+  padding-top: 60px;
+} */
 
 .home-flex {
   text-align: center;
