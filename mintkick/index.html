@@ -9,6 +9,7 @@
 
   <body>
     <div id="content">
+      <!-- "real" header -->
       <header>
         <a href="index.html" id="logo_link">
           <div class="logo-container">
@@ -27,6 +28,24 @@
       </header>
 
       <main class="home-flex">
+        <!-- sticky header -->
+        <section id="header">
+          <a href="index.html" id="logo_link">
+            <div class="logo-container">
+              <img
+                class="logo"
+                src="images/mintkick-logo-palegreen.png"
+                alt="logo"
+              />
+            </div>
+          </a>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="music.html">Music</a>
+            <a href="about-me.html">About Me</a>
+          </nav>
+        </section>
+
         <div class="hero">
           <div class="hero-box">
             <img
@@ -104,5 +123,32 @@
         }
       </script> -->
     </div>
+
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the header
+      var header = document.getElementById("header");
+
+      // Get the offset position of the header
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("sticky");
+          // make the header div element visible
+          header.style.display = "grid";
+        } else {
+          header.classList.remove("sticky");
+          // vvv doesn't work vvv
+          // // make the header div element invisible
+          // header.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
