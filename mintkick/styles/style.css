@@ -106,14 +106,13 @@ body {
 }
 
 header {
+  /* overflow: hidden; */
   /* background-color: var(--secondary-color); */
   box-shadow: 5px 5px 50px var(--secondary-color);
   font-family: "Playwrite AU SA", Courier, sans-serif;
   display: grid;
   grid-template-columns: auto auto;
   /* grid-template-columns: auto 150px auto; */
-
-  overflow: hidden;
 }
 nav {
   display: flex;
@@ -346,24 +345,28 @@ footer a:hover {
 }
 .song-entry:hover {
   background-color: var(--secondary-color);
-  box-shadow: 0 0 7px var(--primary-color);
+  /* box-shadow: 0 0 7px var(--primary-color); */
+  box-shadow: 0 0 8px var(--secondary-color);
 }
 .song-entry:hover h3 {
   text-decoration: underline;
   color: var(--primary-color);
 }
 
+.status {
+  display: flex;
+  text-align: justify;
+  background-color: #3cb37188;
+  padding: 0 5%;
+}
 .status-title {
   color: mintcream;
   font-family: "Playwrite AU SA", Nunito, Courier, sans-serif;
   /* box-shadow: 0 -10px 70/15px black; */
   /* box-shadow: 0 -10px 25px var(--secondary-color); */
 }
-.status {
-  display: flex;
-  text-align: justify;
-  background-color: #3cb37188;
-  padding: 0 5%;
+.status-title h2 {
+  color: var(--accent2-color);
 }
 .screenshot {
   width: 45%;
@@ -377,27 +380,25 @@ footer a:hover {
   text-align: center;
 }
 
-.post h3 {
-  font-family: "Rock Salt", "RocknRoll One";
-  color: #275dad;
-  /* text-align: center; */
-}
-.post {
-  width: 80%;
+.chapter {
+  width: 75%;
   /* display: block; */
   margin: 0 auto;
   text-align: justify;
-  /* content: normal; */
-  font-size: 1em;
 
-  padding: 45px;
+  padding: 2em;
   line-height: 1.5em;
-  background-color: #d8c99b;
+  background-color: #3cb37188;
   /* grid-column: 6/10;
   grid-row: 6/7; */
   box-shadow: 5px 5px 10px #5b616a;
 }
-.post img {
+/* .chapter h3 {
+  font-family: 
+  color: ;
+  text-align: center;
+} */
+.chapter img {
   /* max-height: 75%; */
   /* height: 150px; */ /* width: auto; */
   float: inline-end;

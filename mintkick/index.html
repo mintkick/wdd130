@@ -29,10 +29,17 @@
       <main class="home-flex">
         <div class="hero">
           <div class="hero-box">
-            <img class="hero-img" src="images/hero1.jpg" alt="hero image" />
+            <img
+              onload="typeWriter()"
+              class="hero-img"
+              src="images/hero1.jpg"
+              alt="hero image"
+            />
           </div>
           <!-- <h1 class="home-title">MintKick</h1> -->
-          <div class="home-title"><h1>MintKick Official</h1></div>
+          <div class="home-title">
+            <h1>MintKick Official</h1>
+          </div>
           <!-- <p>MintKick</p><p>Official</p> -->
           <!-- <section> -->
           <!-- <h1 class="home-title">MintKick Official</h1> -->
@@ -80,8 +87,22 @@
         <p><a href="index.html">Home</a></p>
         <p><a href="music.html">Music</a></p>
         <p><a href="about-me.html">About Me</a></p>
-        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="site-plan.html" target="_blank">Site Plan</a></p>
       </footer>
+
+      <!-- <script>
+        var i = 0;
+        var txt = "MintKick Official"; /* The text to print */
+        var speed = 50; /* The time between each character in milliseconds */
+
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("home-title").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+      </script> -->
     </div>
   </body>
 </html>
